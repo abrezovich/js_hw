@@ -18,7 +18,7 @@ const ADMIN_PASSWORD = 'jqueryismyjam';
 let input = prompt("Введите пароль!");
 switch (input) {
     case ADMIN_PASSWORD:
-        message = "Добро пожадовать!";
+        message = "Добро пожаловать!";
         alert(message);
         break;
     case null:
@@ -30,4 +30,9 @@ switch (input) {
         alert(message);
         break;
 };
+/////****4 */
+const credits = 23580;
+const pricePerDroid = 3000;
+input = prompt('Введите количество дроидов');
+
 
