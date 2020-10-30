@@ -34,5 +34,13 @@ switch (input) {
 const credits = 23580;
 const pricePerDroid = 3000;
 input = prompt('Введите количество дроидов');
+let totalPrice = Number(input) * pricePerDroid;
+if (input === null) {
+    console.log('Отменено пользователем!');
+} else if (totalPrice < credits) {
+    let currentBalance = credits - totalPrice;
+    console.log(`Вы купили ${input} дроидов, на счету осталось ${currentBalance}  кредитов`);
+} else{ console.log('Недостаточно средств на счету!');} 
+/////*** 5 */
 
 
